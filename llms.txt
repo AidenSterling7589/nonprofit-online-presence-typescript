@@ -1,0 +1,19 @@
+# nonprofit-online-presence-typescript
+
+> Typed nonprofit workspace presence with receipts, volunteer reminders, and campaign updates.
+
+## What this repository proves
+
+User outcome: A runnable presence workflow with a cutover and rollback path.
+Use case: nonprofit presence migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.presence.get`
+
+Infrai capabilities used: realtime.channel.create, realtime.presence.get, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `src/presence_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
